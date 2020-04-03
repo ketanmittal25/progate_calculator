@@ -26,10 +26,10 @@ const inputNumber = (number) => {
 }
 
 numbers.forEach((number) =>{
-    number.addEventListener(("click", (event) =>{
+    number.addEventListener("click", (event) =>{
         inputNumber(event.target.value)
         updateScreen(currentInput)
-    }))
+    })
 })
 
 const operators = document.querySelectorAll(".operator");
